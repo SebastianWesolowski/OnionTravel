@@ -14,7 +14,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto:100,300,700'],
+          families: ['Roboto:100,300,700,900'],
         },
       },
     },
@@ -85,7 +85,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

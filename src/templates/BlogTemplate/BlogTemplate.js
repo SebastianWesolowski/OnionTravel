@@ -4,14 +4,8 @@ import GlobalStyles from '../../assets/styles/GlobalStyles';
 import theme from '../../assets/styles/theme';
 import SEO from '../../components/seo';
 
-const ThemeWraper = styled.div`
-  width: 90vw;
-  max-width: 1440px;
-  margin: 0 5vw;
-  background: blue;
-  @media only screen and (min-width: 1600px) {
-    margin: 0 auto;
-  }
+const ThemeWrapper = styled.div`
+  /* background: blue; */
 `;
 // eslint-disable-next-line react/prop-types
 const BlogTemplate = ({ children }) => (
@@ -19,7 +13,7 @@ const BlogTemplate = ({ children }) => (
     <>
       <GlobalStyles />
       <SEO title="Home" />
-      <ThemeWraper>{children}</ThemeWraper>
+      <ThemeWrapper>{children}</ThemeWrapper>
     </>
   </ThemeProvider>
 );

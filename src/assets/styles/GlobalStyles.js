@@ -13,9 +13,9 @@ export default createGlobalStyle`
 
 
 /* More info: https://bit.ly/2PsCnzk */
-*+* {
+/* *+* {
 	margin-top: 1rem;
-}
+} */
 
 
 /* Remove default padding */
@@ -43,7 +43,6 @@ html {
 
 /* Set core body defaults */
 body {
-  padding-top: 10vh;
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
