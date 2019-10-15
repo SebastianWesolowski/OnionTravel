@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {Link} from 'gatsby';
 import ArrowLinkIcon from '../assets/images/svg/arrowLink.svg';
+import flexUnit from '../assets/styles/mixins';
+
+flexUnit({ weight: 'bold', fontSize: 12, lineHeight: 20 })
 
 const ReadMore = () => {
   const StyledWrapper = styled.div`
@@ -15,10 +18,9 @@ const ReadMore = () => {
     padding: 7px;
 
     p{
+      ${flexUnit({ weight: 'Black', fontSize: 14, lineHeight: 16, letterSpacing: 5 })}
       /* font-family: Roboto-Black; */
-    line-height: 16px;
-      font-size: 14px;
-    font-weight: 900;
+    /* font-weight: 900; */
       color: #000000;
       letter-spacing: 0.5px;
     text-align: right;
@@ -33,13 +35,11 @@ const ReadMore = () => {
     }
   `;
   return (
-    <>
     <StyledWrapper>
       <Link to='asd'>
         <p>Czytaj więcej</p><ArrowLinkIcon />
       </Link>
     </StyledWrapper>
-    </>
   );
 };
 
