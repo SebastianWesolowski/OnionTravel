@@ -4,6 +4,8 @@ import React from 'react';
 import styled from 'styled-components';
 import BlogTemplate from '../templates/BlogTemplate/BlogTemplate';
 import ReadMore from '../components/readMore';
+import TagPostCard from '../components/tagPostCard';
+import TitlePostCard from '../components/titlePostCard';
 
 // import Paragraph from '../components/GlobalComponents/Paragraph/Paragraph';
 
@@ -77,33 +79,33 @@ const Post = styled.div`
       grid-area: 1 / 1 / 2 / 3;
     }
 
-    background: hsl(355, 100%, 60%);
+    background: hsl(355, 100%, 40%);
   }
   :nth-child(2) {
     ${({ theme }) => theme.media.laptop} {
       grid-area: 1 / 3 / 3 / 4;
     }
 
-    background: hsl(355, 100%, 70%);
+    background: hsl(355, 100%, 50%);
   }
   :nth-child(3) {
     ${({ theme }) => theme.media.laptop} {
       grid-area: 1 / 4 / 3 / 5;
     }
 
-    background: hsl(355, 100%, 80%);
+    background: hsl(355, 100%, 60%);
   }
   :nth-child(4) {
     ${({ theme }) => theme.media.laptop} {
       grid-area: 2 / 1 / 4 / 2;
     }
-    background: hsl(355, 100%, 90%);
+    background: hsl(355, 100%, 70%);
   }
   :nth-child(5) {
     ${({ theme }) => theme.media.laptop} {
       grid-area: 2 / 2 / 4 / 3;
     }
-    background: hsl(355, 100%, 100%);
+    background: hsl(355, 100%, 80%);
   }
   :nth-child(6) {
     ${({ theme }) => theme.media.laptop} {
@@ -125,24 +127,48 @@ const Post = styled.div`
 `;
 
 const IndexPage = () => (
-    <BlogTemplate>
-      <Container>
-        <p>Header</p>
-      </Container>
-      <ExtendBlogTemplate>
-        <ContainerFlex className="row">
-          <Post>1 <ReadMore/></Post>
-          <Post>2</Post>
-          <Post>3</Post>
-          <Post>4</Post>
-          <Post>5</Post>
-          <Post>6</Post>
-        </ContainerFlex>
-      </ExtendBlogTemplate>
-      <Container>
-        <p>Content LP</p>
-      </Container>
-    </BlogTemplate>
+  <BlogTemplate>
+    <Container>
+      <p>Header</p>
+    </Container>
+    <ExtendBlogTemplate>
+      <ContainerFlex className="row">
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+        <Post>
+          <TagPostCard />
+          <TitlePostCard />
+          <ReadMore />
+        </Post>
+      </ContainerFlex>
+    </ExtendBlogTemplate>
+    <Container>
+      <p>Content LP</p>
+    </Container>
+  </BlogTemplate>
 );
 
 export default IndexPage;
