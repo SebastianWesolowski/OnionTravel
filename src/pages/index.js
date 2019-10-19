@@ -22,10 +22,10 @@ const ExtendBlogTemplate = styled.div`
   margin: 0 calc(5vw - 10px);
   width: calc(90vw + 20px);
   max-width: 1460px;
-  /* ${({ theme }) => theme.media.phone} {
+
+  @media (min-width: 1600px){
+    margin: 0 calc(((100vw - 1460px)/2) + 0px);
   }
-  ${({ theme }) => theme.media.tablet} {
-  } */
 `;
 const Container = styled.div`
   width: 90vw;
