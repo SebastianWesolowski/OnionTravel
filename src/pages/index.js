@@ -44,19 +44,15 @@ const ContainerFlex = styled.div`
 
 const IndexPage = () => {
   const posts = usePosts();
+  // const every_nth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);
+  posts.length = 6;
   return (
     <LayoutTemplate>
-      {/* <Container> */}
-      <p>Header</p>
-      {/* </Container> */}
       <BlogWrapper>
         <ContainerFlex>
-          {posts.map(post => (
-            // eslint-disable-next-line react/jsx-key
-            // <pre>{JSON.stringify(post, null, 2)}</pre>
-            <PostPreview key={post.slug} post={post}>
-              {' '}
-            </PostPreview>
+          {console.log(posts)}
+          {posts.map((post, i) => (
+            <PostPreview key={post.slug} post={post} position={i} />
           ))}
           {/* <Post>
             <TagPostCard />

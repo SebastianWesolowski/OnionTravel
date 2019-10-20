@@ -2,23 +2,29 @@ import React from 'react';
 // https://transitionlink.tylerbarnes.ca/
 
 // import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import LayoutTemplate from './layoutTemplate';
-// const ThemeWrapper = styled.div`
-//   width: 90vw;
-//   max-width: 1440px;
-//   margin: 0 5vw;
-//   @media only screen and (min-width: 1600px) {
-//     margin: 0 auto;
-//   }
-// `;
 
+export const query = graphql`
+  query($slug: String!) {
+    mdx(frontmatter: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        author
+      }
+      body
+    }
+  }
+`;
 // eslint-disable-next-line react/prop-types
-const PostTemplate = () => (
+const PostTemplate = ({ data: { mdx: post } }) => (
   <LayoutTemplate>
-    <h1>Post title</h1>
-    <p>post by (author)</p>
-    <p>post body</p>
+    <h1>{post.frontmatter.title}</h1>
+    <p>Autor: {post.frontmatter.author}</p>
+    <MDXRenderer>{post.body}</MDXRenderer>
+    {/* <pre>{JSON.stringify(pageContext, null,   2)}</pre> */}
+
     <Link to="/">back to all post</Link>
   </LayoutTemplate>
 );

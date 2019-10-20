@@ -9,6 +9,21 @@ const usePosts = () => {
             title
             slug
             author
+
+            imageVertical {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+            imageHorizontal {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           excerpt
         }
@@ -21,6 +36,8 @@ const usePosts = () => {
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,
     excerpt: post.excerpt,
+    imageVertical: post.frontmatter.imageVertical.childImageSharp.fluid,
+    imageHorizontal: post.frontmatter.imageHorizontal.childImageSharp.fluid,
   }));
 };
 
