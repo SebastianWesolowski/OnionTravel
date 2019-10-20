@@ -72,9 +72,9 @@ img {
 } */
 
 
-.row > * {
+/* .row > * {
   margin-top: 0
-}
+} */
 
 
 /* Inherit fonts for inputs and buttons */

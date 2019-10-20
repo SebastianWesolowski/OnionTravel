@@ -11,6 +11,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/templates/layoutTemplate.js'),
+        },
+      },
+    },
+
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
@@ -65,6 +74,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `posts`,
       },
     },
     {
