@@ -5,7 +5,7 @@ export default function flexUnit({
   letterSpacing = -20,
 } = {}) {
   const exportLineHeight = () => {
-    if(lineHeight === 'normal'){
+    if (lineHeight === 'normal') {
       return `line-height: ${lineHeight}`;
     }
     return `line-height: ${lineHeight}px `;

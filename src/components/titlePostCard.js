@@ -5,7 +5,7 @@ import flexUnit from '../assets/styles/mixins';
 
 flexUnit({ weight: 'bold', fontSize: 12, lineHeight: 20 });
 
-const TitlePostCard = () => {
+const TitlePostCard = ({ title }) => {
   const StyledWrapper = styled.div`
     width:100%;
 
@@ -17,7 +17,7 @@ const TitlePostCard = () => {
   `;
   return (
     <StyledWrapper>
-      <h3>3..&nbsp;2..&nbsp;1.. Starujemy&nbsp;z Blogiem</h3>
+      <h3>{title}</h3>
     </StyledWrapper>
   );
 };
@@ -25,11 +25,13 @@ const TitlePostCard = () => {
 TitlePostCard.propTypes = {
   // dataLink: PropTypes.string,
   dataColor: PropTypes.string,
+  title: PropTypes.string,
 };
 
 TitlePostCard.defaultProps = {
   // dataLink: "#",
   dataColor: '#fff',
+  title: '',
 };
 
 export default TitlePostCard;
