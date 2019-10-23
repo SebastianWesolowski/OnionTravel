@@ -8,11 +8,16 @@ flexUnit({ weight: 'bold', fontSize: 12, lineHeight: 20 });
 const TitlePostCard = ({ title }) => {
   const StyledWrapper = styled.div`
     width:100%;
+    padding-bottom:45px;
+    ${({ theme }) => theme.media.laptop} {
+      margin-bottom: 100%;
+      }
 
     h3 {
       ${flexUnit({ weight: 'Bold', fontSize: 30, letterSpacing: '0.5px' })}
       color: ${props => (props.dataColor ? props.dataColor : '#fff')};
       text-align: left;
+
     }
   `;
   return (

@@ -8,8 +8,10 @@ flexUnit({ weight: 'bold', fontSize: 12, lineHeight: 20 });
 
 const ReadMore = () => {
   const StyledWrapper = styled.div`
-    width: 160px;
-    height: 30px;
+    width: calc(100% - 30px);
+    max-width: 160px;
+    height: auto;
+    min-height: 30px;
     background: ${props => (props.dataColor ? props.dataColor : '#fff')};
     border-radius: 5px;
     display: flex;
