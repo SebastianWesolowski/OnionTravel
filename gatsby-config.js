@@ -35,17 +35,17 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-root-import',
-      options: {
-        assets: path.join(__dirname, 'src/assets'),
-        components: path.join(__dirname, 'src/components'),
-        pages: path.join(__dirname, 'src/pages'),
-        templates: path.join(__dirname, 'src/templates'),
-        utils: path.join(__dirname, 'src/utils'),
-        src: path.join(__dirname, 'src'),
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-root-import',
+    //   options: {
+    //     assets: path.join(__dirname, 'src/assets'),
+    //     components: path.join(__dirname, 'src/components'),
+    //     pages: path.join(__dirname, 'src/pages'),
+    //     templates: path.join(__dirname, 'src/templates'),
+    //     utils: path.join(__dirname, 'src/utils'),
+    //     src: path.join(__dirname, 'src'),
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-styled-components',
       option: {
