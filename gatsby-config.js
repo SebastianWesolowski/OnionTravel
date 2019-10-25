@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 const siteConfig = require('./site-config');
 
 module.exports = {
@@ -89,7 +89,6 @@ module.exports = {
         useMozJpeg: false,
         stripMetadata: true,
         jpegProgressive: true,
-        defaultQuality: 75,
       },
     },
     {
