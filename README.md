@@ -22,7 +22,14 @@
       alt="styled with prettier"
     />
   </a>
+  <a href="https://greenkeeper.io/">
+    <img
+      src="https://badges.greenkeeper.io/SebastianWesolowski/OnionTravel.svg"
+      alt="Greenkeeper badge"
+    />
+  </a>
 </p>
+
 
 <p align="center">
  Basic Blog on Gatsby
