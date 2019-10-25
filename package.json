@@ -36,18 +36,11 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
-    "@reach/dialog": "^0.2.9",
-    "@reach/router": "^1.2.1",
-    "@reach/visually-hidden": "^0.1.4",
+
     "babel-plugin-styled-components": "^1.10.6",
-    "cross-env": "^6.0.3",
-    "directory-named-webpack-plugin": "^4.0.1",
     "gatsby": "^2.15.34",
-      "gatsby-background-image": "^0.8.15",
     "gatsby-image": "^2.2.25",
-      "gatsby-mdx": "^1.0.0",
-      "gatsby-plugin-manifest": "^2.2.21",
-      "gatsby-plugin-mdx": "^1.0.52",
+    "gatsby-plugin-mdx": "^1.0.52",
     "gatsby-plugin-offline": "^3.0.13",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-react-svg": "^2.1.2",
@@ -67,11 +60,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-pose": "^4.0.9",
-      "react-slick": "^0.25.2",
-      "scheduler": "^0.16.2",
-      "slick-carousel": "^1.8.1",
-    "styled-components": "^4.4.0",
-      "theme-ui": "^0.2.44"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@danbruegge/gatsby-plugin-stylelint": "^3.4.1",
@@ -79,7 +68,8 @@
     "babel-eslint": "^10.0.3",
     "chrome-launcher": "^0.11.2",
     "core-js": "^3.2.1",
-    "directory-named-webpack-plugin": "^4.0.0",
+    "cross-env": "^6.0.3",
+    "directory-named-webpack-plugin": "^4.0.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",
@@ -90,18 +80,25 @@
     "eslint-plugin-react": "^7.16.0",
     "favicons": "^5.4.1",
     "gatsby-plugin-eslint": "^2.0.5",
-      "gatsby-plugin-root-import": "^2.0.5",
     "husky": "^3.0.8",
     "lighthouse": "^5.5.0",
     "lint-staged": "^9.4.2",
     "mkdirp": "^0.5.1",
     "node-gyp": "^6.0.0",
-    "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "stylelint": "^11.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
     "stylelint-webpack-plugin": "^1.0.2"
+  },
+  "unusableButInteresting": {
+    "@reach/dialog": "^0.2.9",
+    "@reach/router": "^1.2.1",
+    "@reach/visually-hidden": "^0.1.4",
+    "gatsby-background-image": "^0.8.15",
+    "gatsby-plugin-manifest": "^2.2.21",
+    "react-slick": "^0.25.2"
   }
+
 }
