@@ -23,7 +23,7 @@ jobs:
 
       # Run tests
       - run: yarn test
-      - run: yarn build
+      # - run: yarn build
       # - deploy:
       #     command: |
       #       git config --global user.email $GH_EMAIL

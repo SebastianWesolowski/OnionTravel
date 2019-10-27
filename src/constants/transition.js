@@ -1,3 +1,3 @@
 const timeout = 250;
 
-export {timeout as default};
+export { timeout as default };

@@ -113,7 +113,6 @@ const StyledWrapper = styled.article`
       :nth-child(4) {
         grid-area: 2 / 1 / 4 / 3;
       }
-
     }
     &.contain-5-posts {
       :nth-child(1) {

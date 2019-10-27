@@ -5,12 +5,10 @@ import React from 'react';
 import LayoutTemplate from '../templates/layoutTemplate';
 import BlogWrapper from '../components/blogWrapper';
 
-const IndexPage = () => {
-  return (
-    <LayoutTemplate>
-      <BlogWrapper />
-    </LayoutTemplate>
-  );
-};
+const IndexPage = () => (
+  <LayoutTemplate>
+    <BlogWrapper />
+  </LayoutTemplate>
+);
 
 export default IndexPage;
