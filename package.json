@@ -66,7 +66,7 @@
     "@danbruegge/gatsby-plugin-stylelint": "^3.4.1",
     "ava": "^0.25.0",
     "babel-eslint": "^10.0.3",
-    "chrome-launcher": "^0.11.2",
+    "chrome-launcher": "^0.13.0",
     "core-js": "^3.2.1",
     "cross-env": "^7.0.0",
     "eslint": "^6.5.1",
