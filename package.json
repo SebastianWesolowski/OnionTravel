@@ -34,7 +34,7 @@
     "url": "https://github.com/SebastianWesolowski/OnionTravel/issues"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.5.1",
     "babel-plugin-styled-components": "^1.10.6",
     "directory-named-webpack-plugin": "^4.0.1",
