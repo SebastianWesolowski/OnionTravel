@@ -15,12 +15,6 @@
     "analyze": "ANALYZE_BUNDLE_SIZE=true gatsby build",
     "test": "ava **/*.test.js --verbose"
   },
-  "greenkeeper": {
-    "ignore": [
-      "ava",
-      "core-js"
-    ]
-  },
   "private": true,
   "keywords": [
     "gatsby",
