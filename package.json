@@ -38,7 +38,7 @@
     "@mdx-js/react": "^1.5.1",
     "babel-plugin-styled-components": "^1.10.6",
     "directory-named-webpack-plugin": "^4.0.1",
-    "gatsby": "^2.15.34",
+    "gatsby": "^2.32.8",
     "gatsby-image": "^2.2.25",
     "gatsby-plugin-mdx": "^1.0.52",
     "gatsby-plugin-offline": "^3.0.13",
